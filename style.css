@@ -1,0 +1,98 @@
+.slider-button {
+  border: none;
+  display: inline-block;
+  padding: 8px 16px;
+  vertical-align: middle;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  background-color: inherit;
+  text-align: center;
+  cursor: pointer;
+  white-space: nowrap;
+  flex-grow: 10;
+}
+.slider-black {
+  color: #fff !important;
+  background-color: #000 !important;
+}
+.slider-display-left {
+  /*WAS ABSOLUTE*/
+  /*position: static;
+  top: 50%;*/
+  position: relative;
+  top: -35vh;
+  left: 0%;
+  /*WAS -50%*/
+  transform: translate(0%,-550%);
+  -ms-transform: translate(-0%,-550%);
+}
+
+.slider-display-right {
+  /*WAS ABSOLUTE*/
+  /* position: static;
+  top: 50%;*/
+  position: relative;
+  top: -35vh;
+  right: 0%;
+  /*WAS 0%,-50%*/
+  /*transform: translate(2482%,-550%);*/
+  transform: translate(2482%,-580%);
+  -ms-transform: translate(2482%,-580%);
+}
+
+
+.right-slider-button {
+  position: absolute;
+  top: 23%;
+  left: 85%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  z-index: 99999;
+}
+
+.left-slider-button {
+  position: absolute;
+  top: 23%;
+  left: 15%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  z-index: 99999;
+}
+
+.carousel-container .hide {
+  visibility: hidden;
+}
+
+.carousel-container:hover .hide {
+  visibility: visible;
+}
+
+.flex-container {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+/* Hide all carousel slides by default */
+.carousel-container .carousel > * {
+  display: none;
+}
+
+/* Only show the active carousel slide */
+.carousel-container .carousel > *.active {
+  display: block;
+}
